@@ -1,0 +1,16 @@
+def longestCommonPrefix(strs):
+    
+    com = ""
+
+    for i in range(len(strs[0])):
+        for s in strs:
+            if i == len(s) or s[i] != strs[0][i]:
+                return com
+        
+        com += strs[0][i]
+    
+    return com
+        
+
+strs = ["flower","flow","flight"]
+print(longestCommonPrefix(strs))
