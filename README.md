@@ -1,6 +1,6 @@
 📘 DSA Problem Sheet (Daily Practice)
 
-Welcome to my Data Structures & Algorithms (DSA) repository 🚀
+Welcome to my Data Structures & Algorithms (DSA) repository 
 This repository contains problems that I solve daily to improve my problem-solving skills and prepare for coding interviews.
 
 📅 Goal
