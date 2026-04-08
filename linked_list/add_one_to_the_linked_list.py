@@ -40,7 +40,7 @@ def reverseLL(head):
     return prev
 
 def recursionFun(temp):
-    if temp == None:
+    if temp is None:
         return 1
     
     carry = recursionFun(temp.next)
