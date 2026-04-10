@@ -43,6 +43,9 @@ def deleteAllOccurance(head, val):
         temp = temp.next 
     return head
 
+    # Time = O(n)
+    # Space = O(1)
+
 head = arrayToLL([1,2,3,4,4,5,6,4])
 printLL(deleteAllOccurance(head, 4))
 
