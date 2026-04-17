@@ -76,6 +76,9 @@ def reverseKGroup(head, k):
     
     return head
 
+    # Time - O(n) + O(n) = O(n)
+    # Space - O(1)
+
 
 head = arrayToLL([1,2,3,4,5])
 printLL(reverseKGroup(head, 2))
