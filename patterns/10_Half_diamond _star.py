@@ -11,15 +11,15 @@ def half_diamond_star(n):
     #     print()
 ###################
 
-    for i in range(2*n):
-        stars = i
+    # for i in range(2*n):
+    #     stars = i
 
-        if i > n:
-            stars = 2*n-i
+    #     if i > n:
+    #         stars = 2*n-i
 
-        for j in range(stars):
-            print("*", end=" ")
-        print()
+    #     for j in range(stars):
+    #         print("*", end=" ")
+    #     print()
 
 ### Optimize way ########
 
@@ -27,5 +27,10 @@ def half_diamond_star(n):
     #     print("*" * i)
     # for i in range(n-1, 0, -1):
     #     print("*" * i)
+
+####### Optimize ##############
+    for i in range(1, 2*n):
+        stars = i if i <= n else 2*n - i
+        print("*" * stars)
 
 half_diamond_star(5)
