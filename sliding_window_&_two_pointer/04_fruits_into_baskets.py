@@ -2,9 +2,9 @@ from collections import defaultdict
 
 def totalFruits(fruits):
     n = len(fruits)
+    maxlen = 0
 
 ################## Brute force ################
-    # maxlen = 0
     
     # for i in range(n):
     #     seen = set()
@@ -15,7 +15,7 @@ def totalFruits(fruits):
     #             maxlen = max(maxlen, j-i+1)
     #         else:
     #             break
-    
+
     # return maxlen
 
     # Time: O(n²)
@@ -23,7 +23,6 @@ def totalFruits(fruits):
     
 ################ Optimal-1 ####################
 
-    maxlen = 0
     left = right = 0
     basket = defaultdict(int)
 
