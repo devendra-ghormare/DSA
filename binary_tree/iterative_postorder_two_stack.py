@@ -29,7 +29,7 @@ def iterativePostorder(root):
     return postorder
 
 # Time = O(n)
-# Space = O(2N) where H is the height of the binary tree. The space is used by the stack to store nodes during traversal. 
+# Space = O(2N)  
 
 
 root = Node(1)
