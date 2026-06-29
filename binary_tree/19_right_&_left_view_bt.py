@@ -21,6 +21,22 @@ def rightView(root):
 
     return ans
 
+def leftView(root):
+    def recursion(node, level, ans):
+        if not node:
+            return 
+
+        if level == len(ans):
+            ans.append(node.val)
+
+        recursion(node.left, level + 1, ans)
+        recursion(node.right, level + 1, ans)
+    
+    ans = []
+    recursion(root, 0, ans)
+
+    return ans
+
 # Time = O(n)
 # Space = O(h) where h is the height of the tree
 
@@ -35,4 +51,5 @@ root.right.right = Node(10)
 root.right.left = Node(9)
 
 
-print(rightView(root))
+print("Right view:",rightView(root))
+print("Left view:",leftView(root))
