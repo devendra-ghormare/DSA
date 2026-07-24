@@ -5,8 +5,6 @@ class Node:
         self.right = None
 
 def searchBST(root, target):
-    if not root:
-        return None
 
     while root and root.val != target:
         if target > root.val:
